@@ -168,7 +168,351 @@ Container(
       )
     ],
   ),
-)
+),
+            Container(
+              margin: EdgeInsets.only(top:MediaQuery.of(context).size.height *0.02),
+              height: MediaQuery.of(context).size.height *0.08,
+              width: MediaQuery.of(context).size.width * 0.95,
+              decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      blurRadius: 4,
+                      offset: Offset(1, 2), // Shadow position
+                    ),
+                  ],
+                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                color: Color.fromARGB(255, 255, 255, 255)
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top:MediaQuery.of(context).size.height *0.02),
+              height: MediaQuery.of(context).size.height *0.08,
+              width: MediaQuery.of(context).size.width * 0.95,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Vehicule available',style: TextStyle(fontSize:MediaQuery.of(context).size.height *0.035, fontWeight: FontWeight.bold),),
+                  Text('Most popular',style: TextStyle(fontSize:MediaQuery.of(context).size.height *0.025, color:Color.fromARGB(255, 183, 0, 0), ),)
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top:MediaQuery.of(context).size.height *0.02),
+              height: MediaQuery.of(context).size.height *0.63,
+              width: MediaQuery.of(context).size.width * 0.95,
+              child: ListView(
+                padding: EdgeInsets.all(0),
+                children: [
+                  Container(
+                    height: MediaQuery.of(context).size.height *0.3,
+                    width: MediaQuery.of(context).size.width * 0.9,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        GestureDetector(
+                          onTap: (){
+
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(MediaQuery.of(context).size.height *0.015),
+                            height: MediaQuery.of(context).size.height *0.25,
+                            width: MediaQuery.of(context).size.width * 0.45,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(20)),
+                                color: Colors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    blurRadius: 4,
+                                    offset: Offset(1, 2), // Shadow position
+                                  ),]
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Container(
+                                    height: MediaQuery.of(context).size.height *0.1,
+                                    width: MediaQuery.of(context).size.height *0.3,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage('img/teslablue.png'),
+                                          fit: BoxFit.fitWidth
+                                      )
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Model S', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.025 ),)
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Start from ', textAlign: TextAlign.left,style: TextStyle(fontSize:MediaQuery.of(context).size.height *0.02 ),),
+                                    Text('162.24 €', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.02 ),)
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: (){
+
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(MediaQuery.of(context).size.height *0.015),
+                            height: MediaQuery.of(context).size.height *0.25,
+                            width: MediaQuery.of(context).size.width * 0.45,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(20)),
+                                color: Colors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    blurRadius: 4,
+                                    offset: Offset(1, 2), // Shadow position
+                                  ),]
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Container(
+                                  height: MediaQuery.of(context).size.height *0.1,
+                                  width: MediaQuery.of(context).size.height *0.3,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage('img/teslablue.png'),
+                                          fit: BoxFit.fitWidth
+                                      )
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Model S', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.025 ),)
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Start from ', textAlign: TextAlign.left,style: TextStyle(fontSize:MediaQuery.of(context).size.height *0.02 ),),
+                                    Text('162.24 €', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.02 ),)
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
+
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height *0.3,
+                    width: MediaQuery.of(context).size.width * 0.9,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        GestureDetector(
+                          onTap: (){
+
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(MediaQuery.of(context).size.height *0.015),
+                            height: MediaQuery.of(context).size.height *0.25,
+                            width: MediaQuery.of(context).size.width * 0.45,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(20)),
+                                color: Colors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    blurRadius: 4,
+                                    offset: Offset(1, 2), // Shadow position
+                                  ),]
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Container(
+                                  height: MediaQuery.of(context).size.height *0.1,
+                                  width: MediaQuery.of(context).size.height *0.3,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage('img/teslablue.png'),
+                                          fit: BoxFit.fitWidth
+                                      )
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Model S', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.025 ),)
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Start from ', textAlign: TextAlign.left,style: TextStyle(fontSize:MediaQuery.of(context).size.height *0.02 ),),
+                                    Text('162.24 €', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.02 ),)
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: (){
+
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(MediaQuery.of(context).size.height *0.015),
+                            height: MediaQuery.of(context).size.height *0.25,
+                            width: MediaQuery.of(context).size.width * 0.45,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(20)),
+                                color: Colors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    blurRadius: 4,
+                                    offset: Offset(1, 2), // Shadow position
+                                  ),]
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Container(
+                                  height: MediaQuery.of(context).size.height *0.1,
+                                  width: MediaQuery.of(context).size.height *0.3,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage('img/teslablue.png'),
+                                          fit: BoxFit.fitWidth
+                                      )
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Model S', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.025 ),)
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Start from ', textAlign: TextAlign.left,style: TextStyle(fontSize:MediaQuery.of(context).size.height *0.02 ),),
+                                    Text('162.24 €', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.02 ),)
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
+
+                      ],
+                    ),
+                  ),
+                  Container(
+                    height: MediaQuery.of(context).size.height *0.3,
+                    width: MediaQuery.of(context).size.width * 0.9,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        GestureDetector(
+                          onTap: (){
+
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(MediaQuery.of(context).size.height *0.015),
+                            height: MediaQuery.of(context).size.height *0.25,
+                            width: MediaQuery.of(context).size.width * 0.45,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(20)),
+                                color: Colors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    blurRadius: 4,
+                                    offset: Offset(1, 2), // Shadow position
+                                  ),]
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Container(
+                                  height: MediaQuery.of(context).size.height *0.1,
+                                  width: MediaQuery.of(context).size.height *0.3,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage('img/teslablue.png'),
+                                          fit: BoxFit.fitWidth
+                                      )
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Model S', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.025 ),)
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Start from ', textAlign: TextAlign.left,style: TextStyle(fontSize:MediaQuery.of(context).size.height *0.02 ),),
+                                    Text('162.24 €', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.02 ),)
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        GestureDetector(
+                          onTap: (){
+
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(MediaQuery.of(context).size.height *0.015),
+                            height: MediaQuery.of(context).size.height *0.25,
+                            width: MediaQuery.of(context).size.width * 0.45,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(20)),
+                                color: Colors.white,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    blurRadius: 4,
+                                    offset: Offset(1, 2), // Shadow position
+                                  ),]
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                Container(
+                                  height: MediaQuery.of(context).size.height *0.1,
+                                  width: MediaQuery.of(context).size.height *0.3,
+                                  decoration: BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage('img/teslablue.png'),
+                                          fit: BoxFit.fitWidth
+                                      )
+                                  ),
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Model S', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.025 ),)
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    Text('Start from ', textAlign: TextAlign.left,style: TextStyle(fontSize:MediaQuery.of(context).size.height *0.02 ),),
+                                    Text('162.24 €', textAlign: TextAlign.left,style: TextStyle(fontWeight: FontWeight.bold,fontSize:MediaQuery.of(context).size.height *0.02 ),)
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
+
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            )
           ],
         ),
 
